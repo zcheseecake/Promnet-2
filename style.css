@@ -1,0 +1,146 @@
+
+
+/* 1. ELEMENT SELECTOR */
+
+body {
+    background-color: #0f1026; 
+    font-family: Arial, sans-serif;
+    color: #f4c2c2; 
+    margin: 20px;
+}
+
+h1 {
+    color: #d946a6; 
+    text-align: center;
+    animation: fadeIn 1.5s;
+}
+
+h2 {
+    color: #a5f3fc; 
+    border-bottom: 2px dashed #6366f1;
+    padding-bottom: 5px;
+}
+
+hr {
+    border: 1px solid #6366f1; 
+}
+
+/* 2. CLASS SELECTOR */
+.menu-nav {
+    display: flex; 
+    justify-content: center;
+    background-color: #5856d6; 
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); 
+}
+
+.menu-nav a {
+    text-decoration: none;
+    color: #f4c2c2; 
+    font-weight: bold;
+    padding: 8px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.menu-nav a:hover {
+    background-color: #a5f3fc;
+    color: #0f1026;
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 12px rgba(165, 243, 252, 0.5);
+}
+
+/* Flexbox */
+.galeri-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.galeri-flex img {
+    border-radius: 8px;
+    border: 2px solid #d946a6; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*  HOVER */
+.galeri-flex img:hover {
+    transform: scale(1.08); 
+    box-shadow: 0 8px 20px rgba(217, 70, 166, 0.7);
+}
+
+.text-footer {
+    text-align: center;
+    color: #a5f3fc;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* 3. ID SELECTOR */
+#kotak-profil {
+    background-color: #5856d6; 
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 6px solid #d946a6; 
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#form-tengah {
+    background-color: #5856d6; 
+    padding: 25px;
+    border-radius: 8px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border: 1px solid #d946a6;
+}
+
+#box-kontak {
+    background-color: #5856d6; 
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 6px solid #d946a6; 
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#project-kotak {
+    background-color: #5856d6; 
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 6px solid #d946a6; 
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#kotak-katalog {
+    background-color: #5856d6; 
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 6px solid #d946a6; 
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+/* ANIMASI */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,7 +1,6 @@
-
-
-/* 1. ELEMENT SELECTOR */
-
+/* ==========================================
+   1. ELEMENT SELECTOR
+   ========================================== */
 body {
     background-color: #0f1026; 
     font-family: Arial, sans-serif;
@@ -12,7 +11,7 @@ body {
 h1 {
     color: #d946a6; 
     text-align: center;
-    animation: fadeIn 1.5s;
+    animation: fadeIn 1.5s; 
 }
 
 h2 {
@@ -25,13 +24,16 @@ hr {
     border: 1px solid #6366f1; 
 }
 
-/* 2. CLASS SELECTOR */
+
+/* ==========================================
+   2. CLASS SELECTOR (Termasuk Flexbox & Hover)
+   ========================================== */
 .menu-nav {
     display: flex; 
     justify-content: center;
     background-color: #5856d6; 
-    padding: 12px;
-    border-radius: 8px;
+    padding: 12px; 
+    border-radius: 8px; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); 
 }
 
@@ -45,7 +47,7 @@ hr {
     transition: all 0.3s ease;
 }
 
-/* Hover */
+
 .menu-nav a:hover {
     background-color: #a5f3fc;
     color: #0f1026;
@@ -53,9 +55,8 @@ hr {
     box-shadow: 0 4px 12px rgba(165, 243, 252, 0.5);
 }
 
-/* Flexbox */
 .galeri-flex {
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
@@ -69,7 +70,7 @@ hr {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/*  HOVER */
+
 .galeri-flex img:hover {
     transform: scale(1.08); 
     box-shadow: 0 8px 20px rgba(217, 70, 166, 0.7);
@@ -82,58 +83,33 @@ hr {
     margin-top: 40px;
 }
 
-/* 3. ID SELECTOR */
-#kotak-profil {
+
+/* ==========================================
+   3. ID SELECTOR (Termasuk Box Model)
+   ========================================== */
+#kotak-profil, #box-kontak, #project-kotak, #kotak-katalog {
     background-color: #5856d6; 
-    padding: 20px;
-    border-radius: 8px;
+    padding: 20px;             
+    border-radius: 8px;        
     border-left: 6px solid #d946a6; 
-    margin-bottom: 20px;
+    margin-bottom: 20px;       
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 #form-tengah {
     background-color: #5856d6; 
-    padding: 25px;
-    border-radius: 8px;
+    padding: 25px;             
+    border-radius: 8px;        
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto;      
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     border: 1px solid #d946a6;
 }
 
-#box-kontak {
-    background-color: #5856d6; 
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 6px solid #d946a6; 
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
 
-#project-kotak {
-    background-color: #5856d6; 
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 6px solid #d946a6; 
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-#kotak-katalog {
-    background-color: #5856d6; 
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 6px solid #d946a6; 
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-
-
-
-
-/* ANIMASI */
+/* ==========================================
+   4. ANIMATION (Tambahan)
+   ========================================== */
 @keyframes fadeIn {
     from {
         opacity: 0;
